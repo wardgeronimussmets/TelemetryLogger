@@ -1,7 +1,7 @@
 const dgram = require('node:dgram');
 const server = dgram.createSocket('udp4');
 
-const PORT = 3000;
+const PORT = 20777; //f1 23
 const HOST = 'localhost';
 
 server.on('listening', () => {
