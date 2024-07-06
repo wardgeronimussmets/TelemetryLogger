@@ -1,0 +1,19 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "outDir": "build",
+    "baseUrl": "./src/parsers",
+    "paths": {
+      "@Type/PacketHeader": [
+        "./PacketHeader/types/index.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "dev/dev.ts"
+  ]
+}
