@@ -195,6 +195,7 @@ export class F122UDP extends EventEmitter {
     this.socket.bind({port: this.port, address: this.address});
     this.socket.on('listening', (): void => {
       this.socket.on('message', (msg: Buffer, rinfo: RemoteInfo): void => {
+        console.log(rinfo);
         switch (rinfo.size) {
           case packetSize.Motion: {
             const {data} = new PacketMotionDataParser(msg);

@@ -131,3 +131,4 @@ dist
 
 #captured data
 CAPTURED DATA/
+TelemetryLogger/listener/f1_telemetry_log.txt

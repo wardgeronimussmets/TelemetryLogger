@@ -1,7 +1,7 @@
 import {F122UDP} from '../src/F1_22_UDP';
 
 
-const f122 = new F122UDP({address: "192.168.88.114"});
+const f122 = new F122UDP({address: "127.0.0.1"});
 f122.start();
 
 f122.on("participants",data => {
